@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="laptop_list_filter.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="notebooks" ng-app="notebooks" ng-controller="NotebookListCtrl">
+        <input type="text" id="query" ng-model="query"/>
+        <select ng-model="orderList">
+          <option value="name">By name</option>
+          <option value="-age">Newest</option>
+          <option value="age">Oldest</option>
+        </select>
+        <ul id="notebook_ul">
+          <li ng-repeat="notebook in notebooks | filter:query | orderBy: orderList">
+            name: {{notebook.name}}<br/>
+            procesor: {{notebook.procesor}}<br/>
+            <div class="right top">{{notebook.age}}</div>
+          </li>
+        </ul>
+        <span>Number of notebooks: {{notebooks.length}}</span>
+      </div>
+      <script src="laptop_list_filter.js"></script>
+</body>
+</html>

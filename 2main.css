@@ -1,0 +1,46 @@
+body{
+    padding: 5% 5%;
+    background-color: #282c34;
+}
+
+*{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.my-container{
+    border: 5px solid cyan;
+    border-radius: 10px;
+    background-color:wheat;
+}
+
+.my-col{
+    border: 3px solid cyan;
+    border-radius: 10px;
+    padding: 5%;
+
+}
+
+.my-row{
+    border-radius: 2px solid cyan;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#item1{
+    background-color: #aed6dc;
+}
+#item2{
+    background-color: #ff9a8d;
+}
+#item3{
+    background-color: #4a536b;
+}

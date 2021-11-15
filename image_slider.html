@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="image_slider.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="slider">
+        <a href="#" class="control_next">></a>
+        <a href="#" class="control_prev"><</a>
+        <ul>
+            <li><img src="https://source.unsplash.com/1200x600/?animal" alt=""></li>
+            <li><img src="https://source.unsplash.com/1200x600/?people" alt=""></li>
+            <li><img src="https://source.unsplash.com/1200x600/?building" alt=""></li>
+            <li><img src="https://source.unsplash.com/1200x600/?car" alt=""></li>
+            <li><img src="https://source.unsplash.com/1200x600/?food" alt=""></li>
+        </ul>
+    </div>
+    <div class="slider_option">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Autoplay</label>
+        <br>
+        <script>
+            function refresh(){
+                window.location.reload();
+            }
+        </script>
+        <button type="submit" onclick="refresh()">Load New Images</button>
+    </div>
+    <script src="image_slider.js"></script>
+</body>
+</html>
